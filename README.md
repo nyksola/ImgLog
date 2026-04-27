@@ -3,7 +3,12 @@ By nyksola.
 
 FAQ Rapidinha aqui
 
-C:como fazer o .py vira .exe
+C: Como transformar .py em .exe?
 
-D:Voce abre o cmd, abaixa python no cmd, coloque na pasta onde esta o "Joguinho.py" usando "cd" no cmd Ex: "cd download/src"  e depois use esse comando: "python -m PyInstaller --onefile --noconsole <nome do seu app>
+D: 1. Abra o cmd e instale a ferramenta: `pip install pyinstaller`
+   2. Vá para a pasta do seu arquivo (ex: `cd download/src`).
+   3. Rode o comando: `pyinstaller --onefile --noconsole <nome_do_seu_app>.py`
 
+O executável estará na pasta `dist`.
+
+# APENAS PARA FINS EDUCACIONAIS
