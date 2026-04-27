@@ -1,4 +1,4 @@
-# ImgLog
+# ScrLog
 By nyksola.
 
 FAQ Rapidinha aqui
